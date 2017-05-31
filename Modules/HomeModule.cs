@@ -10,6 +10,12 @@ namespace RockPaperScissors.Objects
     {
       // ROOT to game.cshtml
       Get["/"] = _ => View["game.cshtml"];
+
+      Post["/game/outcome"] = _ =>
+      {
+        // code
+        return View["/game/outcome.cshtml"];
+      };
     }
   }
 }
