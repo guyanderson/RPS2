@@ -1,12 +1,17 @@
-@{
-  Layout="Shared/_Layout.cshtml";
-}
+
 
 <h1>TWO HANDS ENTER!</h1>
+<!-- Example split danger button -->
 
 
 <form action="/game/outcome" method="post">
   <label for="new-game">Hit the button to play a round of ROCK PAPER SCISSORS:</label>
-  <input id="new-game" name="new-game">
+  <input id="player1" name="new-game" type="text">
+
+
+  <label for="new-game">PLayer2<label>
+  <input id="player2" name="new-game" type="text">
+
+
   <button type="submit">Play!</button>
 </form>

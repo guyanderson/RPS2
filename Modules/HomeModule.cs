@@ -13,8 +13,11 @@ namespace RockPaperScissors.Objects
 
       Post["/game/outcome"] = _ =>
       {
-        // code
-        return View["/game/outcome.cshtml"];
+        // newGame.GetOutput();
+
+        Game newGame = new Game(Request.Form["player1"], Request.Form["player2"]);
+        newGame.CompareInputs(Request.Form["player1"], Request.Form["player2"]);
+        return View["/game/outcome.cshtml", newGame];
       };
     }
   }
