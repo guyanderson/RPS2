@@ -32,17 +32,14 @@ namespace RockPaperScissors.Objects
       {
         _output = "P1 Wins";
       }
-
       else if (_inputP1 == "scissors" && _inputP2 == "paper")
       {
         _output = "P1 Wins";
       }
-
       else if (_inputP1 == "paper" && _inputP2 == "rock")
       {
         _output = "P1 Wins";
       }
-
       else
        {
         _output = "P2 Wins";

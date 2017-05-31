@@ -1,6 +1,3 @@
-// | Both players pick Rock | P1 Rock, P2 Rock | Tie |
-// | Both players pick Scissors | P1 Rock, P2 Rock | Tie |
-// | Both players pick Paper | P1 Rock, P2 Rock | Tie |
 
 
 using Xunit;
