@@ -16,6 +16,8 @@ namespace RockPaperScissors.Objects
       _inputP1 = inputP1;
       _inputP2 = inputP2;
       _output = "";
+      Console.WriteLine(_inputP1);
+      Console.WriteLine(_inputP2);
     }
 
     public string GetOutput(){
