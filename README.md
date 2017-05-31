@@ -8,37 +8,14 @@
 
 This app will recreate the game Rock Paper Scissors.
 
+| CORE CS and TESTS | | |
 |  behavior | input  | output  |
 |---|---|---|
-| Both players pick Rock | P1 Rock, P2 Rock | Tie |
-| Both players pick Scissors | P1 Rock, P2 Rock | Tie |
-| Both players pick Paper | P1 Rock, P2 Rock | Tie |
-
-| One player picks Rock, one picks Scissors | P1 Rock, P2 Sciss | P1 Win |
-
-
-Simplest - first spec
-all possible inputs outputs
-inputs: player1Choice, player2Choice
-output:  one player wins this round
-
-
-input: player1Choice = Rock
-input: player1Choice = Scissors ...
-
-every possible combo of player choices
-
-
-one player ROck, anothe rplayer Scissrs > rock wins
-
-outptu:  what each player chose
-
-
-
-
-
-| The letter 'e' will be replaced with '3' | "leetspeak" | "l33tsp3ak" |
-
+| Both players pick the same | P1 Rock, P2 Rock | Tie |
+| PlayerOne picks Rock, PlayerTwo picks Scissors | P1 Rock, P2 Sciss | P1 Win |
+| PlayerOne picks Scissors, PlayerTwo picks Paper | P1 Sciss, P2 Paper | P1 Win |
+| PlayerOne picks Paper, PlayerTwo picks Rock | P1 Paper, P2 Rock | P1 Win |
+| Any other outcome means PlayerTwo wins | P2 Rock, P1 Sciss | P2 Win |
 
 
 ## Setup/Installation Requirements
