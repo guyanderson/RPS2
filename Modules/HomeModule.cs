@@ -8,16 +8,12 @@ namespace RockPaperScissors.Objects
   {
     public HomeModule()
     {
-      // ROOT to game.cshtml
       Get["/"] = _ => View["game.cshtml"];
 
-      Post["/game/outcome"] = _ =>
+      Post["/outcome"] = _ =>
       {
-        // newGame.GetOutput();
-
         Game newGame = new Game(Request.Form["player1"], Request.Form["player2"]);
-        newGame.CompareInputs(Request.Form["player1"], Request.Form["player2"]);
-        return View["/game/outcome.cshtml", newGame];
+        return View["/outcome.cshtml", newGame];
       };
     }
   }

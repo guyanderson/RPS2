@@ -16,7 +16,7 @@ namespace RockPaperScissors.Objects
       // Instantiation  does not get fed data??
       Game newGame = new Game(inputP1, inputP2);
       // ACT: set _output
-      newGame.CompareInputs(inputP1, inputP2);
+      newGame.CompareInputs();
       // ASSERT
       Assert.Equal("tie", newGame.GetOutput());
     }
@@ -27,7 +27,7 @@ namespace RockPaperScissors.Objects
       string inputP1 = "rock";
       string inputP2 = "scissors";
       Game newGame = new Game(inputP1, inputP2);
-      newGame.CompareInputs(inputP1, inputP2);
+      newGame.CompareInputs();
       Assert.Equal("P1 Wins", newGame.GetOutput());
     }
 
@@ -37,7 +37,7 @@ namespace RockPaperScissors.Objects
       string inputP1 = "scissors";
       string inputP2 = "paper";
       Game newGame = new Game(inputP1, inputP2);
-      newGame.CompareInputs(inputP1, inputP2);
+      newGame.CompareInputs();
       Assert.Equal("P1 Wins", newGame.GetOutput());
     }
 
@@ -48,7 +48,7 @@ namespace RockPaperScissors.Objects
       string inputP1 = "paper";
       string inputP2 = "rock";
       Game newGame = new Game(inputP1, inputP2);
-      newGame.CompareInputs(inputP1, inputP2);
+      newGame.CompareInputs();
       Assert.Equal("P1 Wins", newGame.GetOutput());
     }
   }
