@@ -7,14 +7,16 @@
 {
   <h3>@ViewBag.Error</h3>
 }
+<h2>Let's play some Rock Paper Scissors!</h3>
+<h3>To play, you must spell rock, paper, or scissors correctly. Do not look at your opponents entry.</h3>
 <form action="/outcome" method="post">
-  <label for="new-game">Hit the button to play a round of ROCK PAPER SCISSORS:</label>
+  <label for="new-game">Player 1</label>
   <input id="player1" name="player1" type="password">
-
-
-  <label for="new-game">Player2<label>
+<br>
+<br>
+  <label for="new-game">Player 2<label>
   <input id="player2" name="player2" type="password">
-
-
+<br>
+<br>
   <button type="submit">Play!</button>
 </form>
