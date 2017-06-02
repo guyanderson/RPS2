@@ -23,27 +23,29 @@ namespace RockPaperScissors.Objects
       return CompareInputs();
     }
 
+    public bool IsValid()
+    {
+      bool result = true;
+      if ((_inputP1 != "rock") && (_inputP1 != "paper") && (_inputP1 != "scissors") || (_inputP2 != "rock") && (_inputP2 != "paper") && (_inputP2 != "scissors"))
+      {
+        result = false;
+      }
+      return result;
+    }
     public string CompareInputs()
     {
       string output = "Player 2 wins!";
-      // if (_inputP1 != "rock")
+      // if ((_inputP1 != "rock") && (_inputP1 != "paper") && (_inputP1 != "scissors") || (_inputP2 != "rock") && (_inputP2 != "paper") && (_inputP2 != "scissors"))
       // {
-      //   _output = "Please Spell rock, paper, or scissors correctly!";
+      //   output = "Please Spell rock, paper, or scissors correctly!";
       // }
-      if (_inputP1 == _inputP2)
-      {
+      if (_inputP1 == _inputP2) {
         output = "It's a Tie!";
-      }
-      else if (_inputP1 == "rock" && _inputP2 == "scissors")
-      {
+      } else if (_inputP1 == "rock" && _inputP2 == "scissors") {
         output = "Player 1 wins!";
-      }
-      else if (_inputP1 == "scissors" && _inputP2 == "paper")
-      {
+      } else if (_inputP1 == "scissors" && _inputP2 == "paper") {
         output = "Player 1 wins!";
-      }
-      else if (_inputP1 == "paper" && _inputP2 == "rock")
-      {
+      } else if (_inputP1 == "paper" && _inputP2 == "rock") {
         output = "Player 1 wins!";
       }
       return output;

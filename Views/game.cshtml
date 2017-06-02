@@ -3,7 +3,10 @@
 <h1>TWO HANDS ENTER!</h1>
 <!-- Example split danger button -->
 
-
+@if(ViewBag.Error != null)
+{
+  <h3>@ViewBag.Error</h3>
+}
 <form action="/outcome" method="post">
   <label for="new-game">Hit the button to play a round of ROCK PAPER SCISSORS:</label>
   <input id="player1" name="player1" type="password">
